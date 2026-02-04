@@ -44,6 +44,35 @@ class HomePage extends StatelessWidget {
           children: <Widget>[
             // TIP: Widgets appear in order from top to bottom.
             // If something doesn't show, make sure commas and parentheses match.
+
+            // NEW FEATURE: Simple Profile Card
+            Card(
+              elevation: 4,
+              margin: EdgeInsets.all(16),
+              child: Padding(
+                padding: EdgeInsets.all(16),
+                child: Column(
+                  children: [
+                    Text(
+                      'Quang Tran',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    SizedBox(height: 6),
+                    Text(
+                      'Computer Science.',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.grey,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+
             // TASK 4: Change the main text below
             // 👉 Update this main headline to describe your app.
             Text(
@@ -72,10 +101,14 @@ class HomePage extends StatelessWidget {
             // Text('Created by: [Your Name]')
             // Tip: Use a smaller font or italic style for a signature line.
             // Example with styling:
-            // Text(
-            //   'Created by: [Your Name]",
-            //   style: TextStyle(fontSize: 12, fontStyle: FontStyle.italic, color: Colors.grey),
-            // ),
+            Text(
+              'Created by: Quang Tran',
+              style: TextStyle(
+                fontSize: 12,
+                fontStyle: FontStyle.italic,
+                color: Colors.grey,
+              ),
+            ),
           ],
         ),
       ),
